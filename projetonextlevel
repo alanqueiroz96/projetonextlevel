@@ -1,0 +1,67 @@
+ import java.util.Scanner;
+
+public class PrimeiroProjeto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("----------------------------");
+		System.out.println("Escola do Javali Cansado");
+		System.out.println("----------------------------");
+		System.out.print("Escreva o nome do aluno: ");
+		String nome = sc.nextLine();
+		System.out.println("----------------------------");
+		System.out.println("PRIMEIRO BIMESTRE");
+		System.out.println("----------------------------");
+		System.out.print("Digite a nota da prova (peso 3): ");
+		double notaB1_prova = sc.nextDouble();
+		System.out.print("Digite a nota do projeto (peso 3): ");
+		double notaB1_projeto = sc.nextDouble ();
+		System.out.print("Digite a nota da lista de exercicios (peso 2): ");
+		double notaB1_LisEx = sc.nextDouble();
+		System.out.print("Digite a nota da contribuição em projetos de software livre/ conclusão de MOOCs (peso 3): ");
+		double notaB1_Cont = sc.nextDouble();
+		double notaB1 = notaB1_prova + notaB1_projeto + notaB1_LisEx + notaB1_Cont;
+		System.out.println("----------------------------");
+		System.out.println("NOTA DO 1 BIMESTRE DO ALUNO : " + notaB1);
+		System.out.println("----------------------------");
+		System.out.println("SEGUNDO BIMESTRE");
+		System.out.println("----------------------------");
+		System.out.print("Digite a nota da prova (peso 3): ");
+		double notaB2_prova = sc.nextDouble();
+		System.out.print("Digite a nota do projeto (peso 3): ");
+		double notaB2_projeto = sc.nextDouble ();
+		System.out.print("Digite a nota da lista de exercicios (peso 2): ");
+		double notaB2_LisEx = sc.nextDouble();
+		System.out.print("Digite a nota da contribuição em projetos de software livre/ conclusão de MOOCs (peso 3): ");
+		double notaB2_Cont = sc.nextDouble();
+		double notaB2 = notaB2_prova + notaB2_projeto + notaB2_LisEx + notaB2_Cont;
+		System.out.println("----------------------------");
+		System.out.println("NOTA DO 2 BIMESTRE DO ALUNO : " + notaB2);
+		System.out.println("----------------------------");
+		double media = (notaB1 + notaB2) / 2;
+		System.out.println("A MEDIA DO ALUNO "+nome+" é igual a:" + media);
+		if (media >= 8) {
+			System.out.println("STATUS ALUNO: APROVADO");
+		}else if (media <6) {
+			System.out.println("STATUS DO ALUNO: REPROVADO");
+		}else if (media >=6 && media <8) { 
+			System.out.println("STATUS ALUNO: ALUNO DE RECUPERAÇÃO FAZER AVALIACAO FINAL. ");
+		System.out.println("----------------------------");	
+			System.out.print("DIGITE SUA NOTA NA AVALIAÇÃO FINAL: ");
+			double notaAvaFinal = sc.nextDouble();
+			if (notaAvaFinal < 10) {
+				System.out.print("STATUS FINAL DO ALUNO: REPROVADO");
+			}else if (notaAvaFinal >= 10) {
+				System.out.print("STATUS FINAL DO ALUNO: ALUNO APROVADO");
+			}
+		}
+		
+		
+		
+	
+		
+				
+	}
+
+}
